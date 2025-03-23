@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödevlerim</title>
+</head>
+<body style="text-align: center; font-family: Arial, sans-serif;">
+    <h1>Ödevlerim</h1>
+    
+    <h2>Hw1-Q2</h2>
+    <p> #include <stdio.h>
+
+
+int main( void )
+{
+   int integer1; /*integer1 in sonunda ; yoktu */
+   int integer2; /*integer2 nin sonunda ; yoktu */
+   int sum; /* sum değişkeni başta tanımlı değildi*/
+   int x;      
+
+   printf( "Enter first integer\n" ); /* Yazılı ifadenin başı sonunda "" yoktu */
+   scanf( "%d", &integer1 );        
+
+   printf( "Enter second integer\n" ); 
+   scanf( "%d", &integer2 );        
+   
+   sum = integer1 + integer2; /* sum değişkeni başta tanımlı değildi*/
+
+   printf( "Sum is %d\n", sum );
+   return 0; 
+
+} </p>
+    
+    <h2>Hw1-Q3</h2>
+    <p> #include <stdio.h>
+#include <math.h>
+
+int main(){
+	
+	int popularity;
+	int size;
+	int HomeValue;
+	
+	printf("Please enter the popularity of the neighborhood> \n");
+	scanf("%d", &popularity);
+	
+	printf("Please enter the size of the neighborhood> \n");
+	scanf("%d", &size);
+	
+	HomeValue= (pow(popularity,3)+pow(size,2))*1000;
+	
+	printf("Home value is: %d", HomeValue);
+	
+	return(0);
+	
+
+} </p>
+    
+    <h2>Hw1-Q4a)</h2>
+    <p>#include <stdio.h>
+#include <math.h>
+
+int computeHomeValue (int popularity, int size);
+
+int main(){
+	
+	int popularity;
+	int size;
+	int HomeValue;
+
+	printf("Please enter the popularity of the neighborhood> \n");
+	scanf("%d", &popularity);
+	
+	printf("Please enter the size of the neighborhood> \n");
+	scanf("%d", &size);
+	
+    HomeValue=computeHomeValue(popularity,size);
+    
+    printf("Home value is: %d", HomeValue);
+	
+	return(0);
+
+}
+
+int computeHomeValue (int popularity, int size) {
+		 
+	return (pow(popularity,3)+pow(size,2))*1000;
+	
+} </p>
+
+    <h2>Hw1-Q4b)</h2>
+    <p> #include <stdio.h>
+#include <math.h>
+
+void computeHomeValue (void);
+
+int main(){
+	
+	computeHomeValue();	
+}
+
+void computeHomeValue (void) {
+
+    int popularity;
+	int size;
+	int HomeValue;
+	
+	printf("Please enter the popularity of the neighborhood> \n");
+	scanf("%d", &popularity);
+	
+	printf("Please enter the size of the neighborhood> \n");
+	scanf("%d", &size);
+	
+	HomeValue= (pow(popularity,3)+pow(size,2))*1000;
+	
+	printf("Home value is: %d", HomeValue);
+	
+} </p>
+  
+</body>
+</html>
